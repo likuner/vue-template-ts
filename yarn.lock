@@ -7,6 +7,13 @@
   resolved "https://verdaccio.qn76.cn/@babel%2fparser/-/parser-7.22.7.tgz#df8cf085ce92ddbdbf668a7f186ce848c9036cae"
   integrity sha512-7NF8pOkHP5o2vpmGgNGcfAeCvOYhGLyA3Z4eBQkT1RJlWu47n63bCs93QfJ2hIAFCil7L5P2IWhs1oToVgrL0Q==
 
+"@babel/runtime@^7.22.5":
+  version "7.22.6"
+  resolved "https://verdaccio.qn76.cn/@babel%2fruntime/-/runtime-7.22.6.tgz#57d64b9ae3cff1d67eb067ae117dac087f5bd438"
+  integrity sha512-wDb5pWm4WDdF6LFUde3Jl8WzPA+3ZbxYqkC6xAXuD3irdEHN1k0NfTRrJD8ZD378SJ61miMLCqIOXYhd8x+AJQ==
+  dependencies:
+    regenerator-runtime "^0.13.11"
+
 "@esbuild/android-arm@0.15.18":
   version "0.15.18"
   resolved "https://verdaccio.qn76.cn/@esbuild%2fandroid-arm/-/android-arm-0.15.18.tgz#266d40b8fdcf87962df8af05b76219bc786b4f80"
@@ -21,6 +28,11 @@
   version "1.4.15"
   resolved "https://verdaccio.qn76.cn/@jridgewell%2fsourcemap-codec/-/sourcemap-codec-1.4.15.tgz#d7c6e6755c78567a951e04ab52ef0fd26de59f32"
   integrity sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==
+
+"@microsoft/fast-element@^1.12.0":
+  version "1.12.0"
+  resolved "https://verdaccio.qn76.cn/@microsoft%2ffast-element/-/fast-element-1.12.0.tgz#aabfc75518c3a9000710cce5f66dfc677de8c254"
+  integrity sha512-gQutuDHPKNxUEcQ4pypZT4Wmrbapus+P9s3bR/SEOLsMbNqNoXigGImITygI5zhb+aA5rzflM6O8YWkmRbGkPA==
 
 "@vitejs/plugin-vue@^3.0.0":
   version "3.2.0"
@@ -343,6 +355,18 @@ postcss@^8.1.10, postcss@^8.4.18:
     nanoid "^3.3.6"
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
+
+quarkc@^1.0.39:
+  version "1.0.39"
+  resolved "https://verdaccio.qn76.cn/quarkc/-/quarkc-1.0.39.tgz#e65aadd3d83bf685c9cafa915fdd9f8c9c78e0fd"
+  integrity sha512-dRWogV8BjJlaKjDzYg67ggCWukQ5asPssnIofhGXKHd1Fx2nnb7bv766lN1DyUjk4tKKVRZN0vMgq3o5eZa9PA==
+  dependencies:
+    "@babel/runtime" "^7.22.5"
+
+regenerator-runtime@^0.13.11:
+  version "0.13.11"
+  resolved "https://verdaccio.qn76.cn/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
+  integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
 
 resolve@^1.22.1:
   version "1.22.3"
