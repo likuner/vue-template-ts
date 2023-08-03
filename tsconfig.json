@@ -7,6 +7,7 @@
     "experimentalDecorators": true,
     "strict": true,
     "jsx": "preserve",
+    "jsxFactory": "QuarkElement.h",
     "sourceMap": true,
     "resolveJsonModule": true,
     "isolatedModules": true,

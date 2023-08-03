@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import './components/HoverTipWebComponent/index.js';
+import './components/HoverTipWebComponent/index.ts';
 
 export default defineComponent({
     data() {

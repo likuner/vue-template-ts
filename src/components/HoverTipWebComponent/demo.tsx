@@ -1,4 +1,4 @@
-import { QuarkElement, customElement, property, state } from 'quarkc';
+import { Fragment, QuarkElement, customElement, property, state } from 'quarkc';
 import style from './index.css'
 
 @customElement({ tag: 'my-hover-tip', style })
@@ -22,14 +22,16 @@ export class MyHoverTip extends QuarkElement {
 
   render() {
     return (
-      <div
-        class="hover-tip"
-        onTouchmove={(e) => e.preventDefault()}
-        onClick={(e) => this.handleClick(e)}
-      >
-        <div class="title-box"><slot>{this.title}</slot></div>
-        <div class="btn-box"><slot name="btn">{this.btnText}</slot></div>
-      </div>
+      <Fragment>
+        {this.visible === 'visible' && <div
+          class="hover-tip"
+          onTouchmove={(e) => e.preventDefault()}
+          onClick={(e) => this.handleClick(e)}
+        >
+          <div class="title-box"><slot>{this.title}</slot></div>
+          <div class="btn-box"><slot name="btn">{this.btnText}</slot></div>
+        </div>}
+      </Fragment>
     )
   }
 }
