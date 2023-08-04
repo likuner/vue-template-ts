@@ -1,10 +1,12 @@
 <template>
-  <my-hover-tip :visible="showHoverTip" @change="handleChangeHoverTip"></my-hover-tip>
+  <my-hover-tip :visible="showHoverTip" @change="handleChangeHoverTip">
+    <span slot="btn">I Know</span>
+  </my-hover-tip>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import './components/HoverTipWebComponent/index.js';
+import './components/HoverTipWebComponent/raw.js';
 
 export default defineComponent({
     data() {
