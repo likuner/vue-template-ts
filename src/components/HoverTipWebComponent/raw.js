@@ -33,7 +33,7 @@ class MyHoverTip extends HTMLElement {
     }
     
     handleClick = (e) => {
-        this.shadowRoot.host.dispatchEvent(new CustomEvent('change', {
+        this.dispatchEvent(new CustomEvent('change', {
             bubbles: true,
             composed: false,
             detail: 'hidden',
