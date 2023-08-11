@@ -35,7 +35,7 @@ class MyHoverTip extends HTMLElement {
     handleClick = (e) => {
         this.dispatchEvent(new CustomEvent('change', {
             bubbles: true,
-            composed: false,
+            composed: true,
             detail: 'hidden',
         }));
     }
